@@ -1,0 +1,24 @@
+﻿<div style="padding-left:20px;padding-top:10px;">
+    <div style="color:#ffa410;font-size: 20px;font-family:fantasy">
+        <!--Jag lekte lite, men den verkar inte vilja funka så jag döda den.-->
+        THIS IS THE MASTER PAGE!!!
+            <br />
+            EXTRA PLUS!!!!
+    </div>
+    <table border="1">
+        <tr>
+            <th>Genre ID</th>
+            <th>Genre</th>
+
+        </tr>
+        <tr data-ng-repeat="g in Genres">
+            <td data-ng-bind="g.GenreId" data-ng-click="MASTERALTER(g.GenreId,g.Name)"></td>
+            <td data-ng-bind="g.Name" data-ng-click="MASTERALTER(g.GenreId,g.Name)"></td>
+        </tr>
+        <tr>
+            <td style="height: 16px;"><button data-ng-click="MASTERADDING()">ADD</button></td>
+            <td style="height: 16px;"><input type="text" data-ng-model="NewMaster.Name" placeholder="new genre"/></td>
+        </tr>
+
+    </table>
+</div>

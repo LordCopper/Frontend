@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="TentaApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="scripts/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+    <!--    THE MENU    -->
+    <a href="#/View">View Genres</a>
+    <a href="#/Add">Add a Genre</a>
+    <a href="#/Change">Change a existing Genre</a>
+    <a href="#/Remove">Remove a existing Genre</a>
+    <a href="#/MASTER" style="font-size:20px;color:#ffa410;font-family:fantasy;">EXTRA PLUS MASTER VERSION!</a>
+
+    <!--    THE VIEW IS HERE    -->
+    <div data-ng-view></div>
+
+    <!--    THE SCRIPTS     -->
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="App/Controller/AddGenreController.js"></script>
+    <script src="App/Controller/ChangeGenreController.js"></script>
+    <script src="App/Controller/EXTRAPLUSMASTERController.js"></script>
+    <script src="App/Controller/RemoveGenreController.js"></script>
+    <script src="App/Controller/ViewGenresController.js"></script>
+    <script src="App/index.js"></script>
+</body>
+</html>

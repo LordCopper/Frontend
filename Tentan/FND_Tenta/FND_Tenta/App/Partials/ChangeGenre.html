@@ -1,0 +1,20 @@
+﻿<!--Changeing a Genre-->
+<div style="padding-left:20px;padding-top:10px;">
+    <div style="color:#009900;font-size: 20px;font-family:fantasy">
+        YOU ARE CURRENTLY IN THE CHANGE VIEW
+        <br />
+        CLICKING A NAME WILL LET YOU CHANGE THAT ENTRY
+    </div>
+    <table border="1">
+        <tr>
+            <th>Genre ID</th>
+            <th>Genre</th>
+
+        </tr>
+        <tr data-ng-repeat="g in Genres">
+            <td data-ng-bind="g.GenreId" data-ng-click="ChangeGenre(g.GenreId,g.Name)"></td>
+            <td data-ng-bind="g.Name" data-ng-click="ChangeGenre(g.GenreId,g.Name)"></td>
+        </tr>
+
+    </table>
+</div>

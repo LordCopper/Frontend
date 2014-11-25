@@ -1,0 +1,20 @@
+﻿<!--Removing a Genre-->
+<div style="padding-left:20px;padding-top:10px;">
+    <div style="color:#ff0000;font-size: 20px;font-family:fantasy">
+        WARNING YOU ARE CURRENTLY IN THE REMOVE VIEW!!
+        <br />
+        CLICKING ANY POST WILL REMOVE THAT ENTRY!
+    </div>
+    <table border="4" title="Remove a Genre" style="border:#ff0000 double; background-color:#990000; color:#ffffff;">
+        <tr>
+            <th>Genre ID</th>
+            <th>Genre</th>
+
+        </tr>
+        <tr data-ng-repeat="g in Genres" data-ng-click="RemoveGenre(g.GenreId)">
+            <td data-ng-bind=" g.GenreId"></td>
+            <td data-ng-bind="g.Name"></td>
+        </tr>
+
+    </table>
+</div>
